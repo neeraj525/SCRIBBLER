@@ -1,8 +1,8 @@
 function deletepop(){
-	var delmodal=document.getElementsByClassName('modal')[2];
+	var delmodal=document.getElementById('delete-modal');
 	delmodal.style.display='block';
 }
 
 function hide(){
-	document.getElementsByClassName('modal')[2].style.display='none';
+	document.getElementById('delete-modal').style.display='none';
 }

@@ -2,7 +2,7 @@ var likes =0;
 function liker() {
     if(likes===0)
     {
-      document.getElementById("like").innerHTML ='<i class="fas fa-thumbs-up"></i>&nbsp;Liked!';    
+      document.getElementById("like").innerHTML ='<i class="fa fa-thumbs-up"></i>&nbsp;Liked!';    
         likes++;
         document.getElementById("liketxt").innerHTML = likes+' person liked this!';
     }
@@ -36,7 +36,7 @@ function editor(eds)
     vs.appendChild(par);
     par.classList.add("editcmnt1");
   par.style.height = (par.scrollHeight)+"px";
-        document.getElementById("editing").innerHTML ='Save&nbsp;<i class="fas fa-save"></i>'; 
+        document.getElementById("editing").innerHTML ='Save&nbsp;<i class="fa fa-save"></i>'; 
     once=2;
         
         document.getElementsByClassName("blogAuthor")[0].style.marginBottom="10px";
@@ -47,7 +47,7 @@ function editor(eds)
         document.getElementById("blogBody").innerHTML =gun;
         document.getElementsByClassName("editcmnt1")[0].setAttribute('style','display:none;');
         document.getElementById("blogBody").setAttribute('style','display:block;');
-         document.getElementById("editing").innerHTML ='Edit&nbsp;<i class="fas fa-edit"></i>';
+         document.getElementById("editing").innerHTML ='Edit&nbsp;<i class="fa fa-edit"></i>';
         once=1;
         vs.removeChild(vs.lastChild);
     }

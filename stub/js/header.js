@@ -1,7 +1,7 @@
 // Get the modal
 function showModal1(){
  
-  document.getElementsByClassName('modal')[0].style.display = "block";
+  document.getElementById('signupmodal').style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -26,7 +26,7 @@ function showModal2(){
 // Get the <span> element that closes the modal
 
 // When the user clicks the button, open the modal 
-  document.getElementsByClassName('modal')[1].style.display = "block";
+  document.getElementById('signinmodal').style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
