@@ -2,7 +2,7 @@
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 #heading{
 	color: blue;
-	margin-top: 15px;
+	margin-top: 20px;
 	font-family: "satisfy",cursive;
 	 font-size: 50px; 
 	 font-style: normal; 
@@ -10,6 +10,13 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 	  font-weight: 700; 
 	  line-height: 26.4px;
 	  background-color: none;
+	  margin-left: 15px;
+	  padding: 5px;
+}
+
+.sub-heading{
+	padding: 10px;
+	margin:2px;
 }
 
 #signup{
@@ -23,11 +30,13 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 }
 
 h6{
-	color: white;
-	font-family: "Niconne";
-	 font-size: 36px;
+	color: black;
+	font-family: "Marck Script";
+	 font-size: 45px;
 	  font-style: normal; 
 	  font-variant: normal; 
-	  font-weight: 700; 
+	  font-weight: 500; 
 	  line-height: 26.4px;
+	  padding: 5px;
 }
+
