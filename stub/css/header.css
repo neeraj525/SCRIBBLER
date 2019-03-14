@@ -1,14 +1,15 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 #heading{
-	color: black;
-	font-family: "Marck Script";
-	 font-size: 36px; 
+	color: blue;
+	margin-top: 15px;
+	font-family: "satisfy",cursive;
+	 font-size: 50px; 
 	 font-style: normal; 
 	 font-variant: normal;
 	  font-weight: 700; 
 	  line-height: 26.4px;
-	  background-color: grey;
+	  background-color: none;
 }
 
 #signup{

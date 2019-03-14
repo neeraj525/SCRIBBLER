@@ -1,12 +1,14 @@
 .post {
     position: relative;
-    width: 90%;
-    height: 20%;
+    width: 45%;
+    height: 10%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
     float:left;
     border-radius: 15px;
+    overflow: hidden;
+    font-size: 12px;
 }
     
 .post-left {
@@ -17,6 +19,7 @@
         text-align: center;
         font-weight: bold;
         color: #000;
+        font-size: 15px; 
 }
 .post-content {
         width: 75%;           
@@ -25,7 +28,8 @@
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0 20px;
+        overflow: hidden;      
 }
 .post-title{
     font-family: 'Itim', cursive;
@@ -33,19 +37,23 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    margin-top:15px;
     }
+
 .post-more {
     float: right;
     cursor: pointer;
-    font-size: 18px;
     margin-right: 0 !important;
     padding-right: 0 !important;
-    padding-bottom: 10px;
+    padding-bottom: 0.2px;
     font-size: 30px;
+    margin-top: 15px;
 }
 .post-desc{
     height: 100px;
-    margin-bottom: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: 21px;
+    overflow: hidden;
 }
 
 body {
@@ -56,9 +64,159 @@ body {
     color: #fff;
     background-color: orange;
     background-size: 2000% 2000%;
+    
 }
+
 .allPostsContainer {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.modal-body {padding: 2px 16px;}
+
+.modal-content{
+    padding: 10px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 80px; /* Location of the box */
+  padding-left: 500px;
+  padding-right: 500px;
+  width: 80px; /* Full width */
+  height: 300px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: none;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+#getmid{
+    position: relative;
+  left: 80px;
+}
+
+h2{
+  font-family: Abel; 
+  font-size: 24px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+}
+
+#f_name{
+  background-color: #DCDCDC;
+}
+
+#u_name{
+  background-color: #DCDCDC;
+}
+
+#pass{
+  background-color: #DCDCDC;
+}
+
+#c_pass{
+  background-color: #DCDCDC;
+}
+
+label{
+  font-family: "Ubuntu Condensed"; 
+  font-size: 18px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 550; 
+  line-height: 15.4px;
+}
+
+#signup-btn{
+  width: 320px;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trash-btn{
+    float:right;
+    padding: 10px;
+    font-size: 20px;
+    border:none;
+    background-color: #E8E8E8;
+}
+
+#text{
+    font-family: "Abel",bold;
+    font-weight: 700;
+    font-size: 18px;
+    float: center;
+    
+}
+
+#no-response-btn{
+    float: left;
+    width: 120px;
+    margin: 5px;
+}
+
+#close-btn{
+    position: relative;
+    left: 45px;
+    width: 120px;
+    margin: 5px;
+}
+
+#post5{
+  margin-top: 15px;
+  margin-left: 400px;
+
+}
+
+.more-btn{
+  float: right;
+  background-color: #E8E8E8;
+  border:none;
 }

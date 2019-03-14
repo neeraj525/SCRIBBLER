@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+<head>    
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
     </style>
 </head>
-<body>
+<body style="background-color: orange">
     <div id="main-container-div">
         <div class="header">
                                 
             <!-- Insert code for Sign Up, Sign In button here. 
                  Add code for "ScriBBler" heading and the sub-heading -->
+                 <header>
+            <div id="heading">
+            
+            ScriBBler
+            <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="signin" onclick="showModal2()">Sign In</button>
+            <button type="button" class="btn btn-secondary" id="signup" onclick="showModal1()">Sign Up</button>
+            </div>  
+            <div class="sub-heading">
+            <h6>&nbsp&nbsp&nbsp&nbspExplore, Imagine, Create</h6>
+            </div>
+            </header>
 
         </div>
     </div>
     <div>
 
         <!-- Insert code for Sign In modal here -->
+        <div id="signinmodal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+        <div id="popup"><h2>Welcome Back!</h2></div>    
+        <span class="close" onclick="disappear()">&times;</span>        
+        </div>
+        <div class="modal-body">
+        <form action="#" method="POST">
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" placeholder="Enter Username" required id="u_name">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Enter Password" required id="pass">
+        <br>
+        <div class="btn-group">
+        <button type="submit" class="btn btn-success" id="signup-btn">Sign In</button>  
+        </div>
+        </div>
+        </form>     
+        </div>  
+        </div>
 
     </div>
 
     <div>
 
         <!-- Insert code for Sign Up modal here -->
+        <div id="signupmodal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+        <div id="getmid"><h2>Get Started</h2></div> 
+        <span class="close" onclick="vanish()">&times;</span>   
+        </div>  
+        <div class="modal-body">
+        <form action="#" method="POST">
+        <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" class="form-control" name="fullname" placeholder="Enter Full Name" required id="f_name">
+        <br>
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" placeholder="Enter UserName" required id="u_name">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Enter Password" required id="pass">
+        <br>
+        <label for="confirmpass">Confirm Password</label>
+        <input type="password" class="form-control" name="confirmpass" placeholder="Confirm Password" required id="c_pass">
+        <br>
+        <div class="btn-group">
+        <button type="submit" class="btn btn-success" id="signup-btn">Sign Up</button>  
+        </div>  
+        </div>  
+        </form>
+        </div>  
+        </div>
 
     </div>
 
@@ -38,11 +107,13 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
+            <button class="trash-btn" onclick="deletepop()"><i class="fa fa-trash"></i></button>
 
             <p class="post-title">Hello there ! This is Post 1. </p>
             <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
+            <a href="post.html"><button class="more-btn"><span class="post-more">&#8230;</span></button></a>
 
         </div>
     </div>
@@ -54,12 +125,15 @@
         <div class="post-content">
 
                 <!-- Insert code for Trash icon here -->
+                <button class="trash-btn" onclick="deletepop()"><i class="fa fa-trash"></i></button>
 
                 <p class="post-title">Hello there ! This is Post 2. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             
             <!-- Insert code for ... icon here -->
+            <a href="post.html"><button class="more-btn"><span class="post-more">&#8230;</span></button></a>
+
         </div>
     </div>
 
@@ -71,11 +145,13 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
+            <button class="trash-btn" onclick="deletepop()"><i class="fa fa-trash"></i></button>
 
                 <p class="post-title">Hello there ! This is Post 3. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
+            <a href="post.html"><button class="more-btn"><span class="post-more">&#8230;</span></button></a>
 
         </div>
     </div>
@@ -86,26 +162,31 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
+            <button class="trash-btn" onclick="deletepop()"><i class="fa fa-trash"></i></button>
 
                 <p class="post-title">Hello there ! This is Post 4. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
+            <a href="post.html"><button class="more-btn"><span class="post-more">&#8230;</span></button></a>
 
         </div>
     </div>
-    <div class="post">
+    <div class="post" id="post5">
             <div class="post-left">
                 <p class="post-username">Jimi</p>
             </div>
             <div class="post-content">
 
                 <!-- Insert code for Trash icon here -->
+                <button class="trash-btn" onclick="deletepop()"><i class="fa fa-trash"></i></button>
 
                     <p class="post-title">Hello there ! This is Post 5. </p>
                     <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
                 
                 <!-- Insert code for ... icon here -->
+                <br><br>
+                <a href="post.html"><button class="more-btn"><span class="post-more">&#8230;</span></button></a>
             
             </div>
         </div>
@@ -113,6 +194,17 @@
         <div>
 
             <!-- Insert code for delete modal here -->
+            <div id="delete-modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-body">
+            <span id="text"><div style="margin:10px;">Are you sure you want to delete this post?</div></span>
+            <div class="btn-group">
+            <button type="button" class="btn btn-danger" id="no-response-btn">Yes</button>
+            <button type="button" class="btn btn-success" onclick="hide()" id="close-btn">No</button>
+            </div>
+            </div>
+            </div>
+            </div>    
             
         </div>
         

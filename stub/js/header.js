@@ -1,11 +1,6 @@
 // Get the modal
 function showModal1(){
-
-// Get the button that opens the modal
-
-// Get the <span> element that closes the modal
-
-// When the user clicks the button, open the modal 
+ 
   document.getElementsByClassName('modal')[0].style.display = "block";
 }
 
